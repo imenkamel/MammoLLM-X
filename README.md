@@ -4,3 +4,9 @@ The dataset used in this work is based on the publicly available [CDD-CESM](http
 ## Description
 MammoLLM-X is an end-to-end multimodal AI framework for breast cancer diagnosis that integrates mammography images and patient textual data, including complaints and clinical reports. The system combines image features extracted with ResNet50 and textual features from BioClinicalBERT through a transformer-based fusion mechanism for report generation and a concatenation strategy for tumor classification. It performs tumor classification via an MLP, generates automated clinical reports using a T5 decoder, and provides interpretability through LIME, highlighting important image regions and textual terms. Missing patient complaints in the public CDD-CESM dataset are generated using a customized Retrieval Augmented Generation (RAG) system, enabling a more realistic clinical context. Evaluated on the CDD-CESM dataset, MammoLLM-X achieves state-of-the-art classification accuracy and produces coherent, clinically relevant reports, offering a robust AI-assisted tool for diagnostic support and research in explainable multimodal medical AI.
 <img width="8765" height="4294" alt="Image" src="https://github.com/user-attachments/assets/457a8ba5-e0ca-49f3-8b66-b903870d846e" />
+## Training and Evaluation of Multimodal Classification
+To train and evaluate the multimodal classification model run CV_Classification.py
+## Training of Multimodal Automatic Medical Report Generation 
+To train the multimodal AMRG model run AMRG.py
+## Evaluation of Multimodal Automatic Medical Report Generation 
+To evaluate the multimodal AMRG model run Eval_AMRG.py
